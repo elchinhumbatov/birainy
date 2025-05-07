@@ -8,6 +8,7 @@ import { notFound } from "next/navigation";
 import "../globals.css";
 import { Providers } from "../providers";
 import { routing } from "@/i18n/routing";
+import Navbar from "@/components/navbar/Navbar";
 
 
 type Props = {
@@ -55,7 +56,8 @@ export default async function RootLayout({
         className={`${spaceGrotesk.variable} ${pp_neue_machina.variable} antialiased`}
       >
         <Providers>
-          {children}
+          <Navbar />
+          <div className="pt-[96px] min-h-[80vh]">{children}</div>
         </Providers>
       </body>
     </html>

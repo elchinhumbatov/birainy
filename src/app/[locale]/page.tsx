@@ -8,12 +8,14 @@ export default function Home() {
       <p className="text-3xl">Some regular text</p>
       <Button color="primary">Click regular</Button>
       <Image
-        src="/logo.svg"
+        src="../logo.svg"
         alt="hero"
         width={500}
         height={500}
         className="rounded-lg shadow-lg"
       />
+      <div className="h-screen">a</div>
+      <div className="h-screen">a</div>
     </div>
   );
 }

@@ -5,12 +5,12 @@
     "keywords": ["Data Analitikası xidməti", "datanın vizuallasdırılması", "SMM xidməti", "Sosial Media Marketinqi", "Mobil tətbiqlərin hazırlanması", "tətbiqlərin hazırlanması", "Veb sayt hazırlanması"]
   },
   "Navbar": {
-    "services": "Services",
-    "about": "About us",
-    "contact": "Contact us",
-    "analytics": "Analytics",
-    "projects": "Projects",
-    "blogs": "Blogs",
-    "follow": "Follow us"
+    "services": "Xidmətlərimiz",
+    "about": "Haqqımızda",
+    "contact": "Bizimlə əlaqə",
+    "analytics": "Analitika",
+    "projects": "Layihələr",
+    "blogs": "Bloq",
+    "follow": "Bizi izləyin"
   }
 }
