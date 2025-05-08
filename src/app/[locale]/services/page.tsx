@@ -40,7 +40,7 @@ export default function Services() {
     <section>
       <div className="container">
         <ServicesHeader t={t} />
-        <Divider className="my-10" />
+        <Divider className="my-10 bg-gray-500" />
         <div className="flex flex-col lg:flex-row gap-10 pb-20">
           <ServicesAccordion accordionItems={accordionItems} />
           <div className="info">
@@ -67,13 +67,13 @@ export default function Services() {
                 <Button
                   color="primary"
                   startContent={<Phone />}
-                  className="p-6"
+                  className="p-6 font-semibold"
                 >
                   {t("contacts")}
                 </Button>
               </Link>
               <Link href="/contact">
-                <Button startContent={<Projects />} className="p-6">
+                <Button startContent={<Projects />} className="p-6 font-semibold">
                   {t("projects")}
                 </Button>
               </Link>

@@ -69,17 +69,17 @@ export default function ServicesAccordion({ accordionItems }: { accordionItems: 
                   handleAccordionId(item.id);
                 }}
               >
-                <span className="text-xl font-semibold">{item.title}</span>
+                <span className="font-pp-neue text-xl font-semibold">{item.title}</span>
                 <span className="text-3xl font-semibold">
                   {hasTabs ? (expandedIndex === index ? "-" : "+") : ""}
                 </span>
               </div>
               {hasTabs && expandedIndex === index && (
-                <div className="pl-4 bg-gray-100 border-t border-t-gray-300 py-4 rounded-b-lg">
+                <div className="p-4 bg-gray-100 border-t border-t-gray-300 rounded-b-lg">
                   {(item.tabs ?? []).map((tab, tabIndex) => (
                     <p
                       key={tabIndex}
-                      className="cursor-pointer text-gray-500"
+                      className="font-pp-neue cursor-pointer text-gray-500 text-xl py-2"
                       onClick={() => handleAccordionItem(tabIndex)}
                     >
                       {tab.title}

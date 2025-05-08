@@ -21,16 +21,16 @@ export default function Footer() {
   const offices = ['az', 'cn', 'ge'] as const;
 
   return (
-    <section className="bg-black text-white py-10">
+    <section className="bg-black text-white py-10 px-4">
       <div className="container">
         {/* Links */}
         <div className="flex items-start md:items-end justify-between flex-col md:flex-row gap-2 mb-10">
           <div className="mb-10 md:mb-0">
-            <h2 className="w-[70%] sm:w-[60%] md:w-[55%] text-3xl md:text-5xl mb-6">{t2('title')}</h2>
+            <h2 className="w-[70%] sm:w-[60%] md:w-[55%] text-3xl md:text-5xl mb-6 font-semibold">{t2('title')}</h2>
             <ul className="flex flex-col md:flex-row space-x-4">
               {footerlinks.map((link) => (
                 <li key={link.name}>
-                  <Link className="font-semibold text-lg" href={link.href}>{t(link.name)}</Link>
+                  <Link className="font-semibold text-lg inline-block py-1" href={link.href}>{t(link.name)}</Link>
                 </li>
               ))}
             </ul>
@@ -64,11 +64,11 @@ export default function Footer() {
         </div>
 
         {/* Offices */}
-        <div className="flex flex-col md:flex-row justify-between gap-10">
+        <div className="flex flex-col md:flex-row justify-between gap-5">
           {offices.map((office) => (
             <div key={office}>
-              <h6 className="text-2xl mb-3">{t2(`${office}.country`)}</h6>
-              <p className="text-lg text-gray-400 mb-4">{t2(`${office}.address`)}</p>
+              <p className="text-xl mb-3">{t2(`${office}.country`)}</p>
+              <p className="text-gray-400 mb-4">{t2(`${office}.address`)}</p>
             </div>
           ))}
         </div>
@@ -81,10 +81,10 @@ export default function Footer() {
             <p className="text-lg">Partner with</p>
             <Image src='/icons/microsoft.svg' alt='microsoft' width={100} height={26} />
           </div>
-          <div className="flex flex-col md:flex-row items-center justify-center gap-2">
-            <Link href='tel:+994124886654' className="text-lg">+994 12 488 66 54</Link>
-            <Link href='tel:+994776131317' className="text-lg">+994 77 613 13 17</Link>
-            <Link href='mailto:info@birainy.com' className="text-lg">info@birainy.com</Link>
+          <div className="flex flex-col md:flex-row items-center justify-center">
+            <Link href='tel:+994124886654' className="text-lg mx-5 my-2">+994 12 488 66 54</Link>
+            <Link href='tel:+994776131317' className="text-lg mx-5 my-2">+994 77 613 13 17</Link>
+            <Link href='mailto:info@birainy.com' className="text-lg mx-5 my-2">info@birainy.com</Link>
           </div>
         </div>
       </div>

@@ -10,12 +10,12 @@ interface ServicesHeaderProps {
 export default function ServicesHeader({ t }: ServicesHeaderProps) {
   return (
     <div>
-      <div className="mt-15 mb-10">
-        <Image src="/icons/star.svg" alt="star" width={48} height={48} />
+      <div className="mt-5 md:mt-15 mb-5 md:mb-10">
+        <Image src="/icons/star.svg" alt="star" width={48} height={48} className="w-[30px] md:w-[48px]" />
       </div>
       <div className="flex items-end justify-between gap-15">
         <div>
-          <h1 className="font-pp-neue text-3xl sm:text-5xl md:text-7xl mb-8">{t('title')}</h1>
+          <h1 className="font-pp-neue text-3xl sm:text-5xl md:text-6xl mb-8 font-semibold">{t('title')}</h1>
           <p>{t('description')}</p>
         </div>
         <div className="hidden lg:flex">

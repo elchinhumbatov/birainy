@@ -75,6 +75,7 @@ export default function Navbar() {
                 alt="Logo"
                 width={158}
                 height={100}
+                className="min-w-[158px]"
               />
             </Link>
           </div>
@@ -155,7 +156,7 @@ export default function Navbar() {
                         width={20}
                         height={20}
                       />{" "}
-                      AZ
+                      Az
                     </p>
                   </DropdownItem>
                   <DropdownItem key="en" textValue="en">
@@ -166,7 +167,7 @@ export default function Navbar() {
                         width={20}
                         height={20}
                       />{" "}
-                      EN
+                      En
                     </p>
                   </DropdownItem>
                 </DropdownMenu>
@@ -203,7 +204,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="lg:hidden h-[calc(100vh-96px)]">
+        <div className="lg:hidden h-[calc(100vh-80px)]">
           <div className="h-full px-2 pt-8 pb-3 flex flex-col justify-between gap-4">
             <div>
               {navlinks.map((link) => (
