@@ -2,7 +2,7 @@
   "Metadata": {
     "title": "BIRainy | Discover the code of success with us",
     "description": "Təklif etdiyimiz xidmətlərlərlə məqsədimiz biznesinizi həm daxildən, həm də onlayn formada inkişaf etdirməkdir.",
-    "keywords": ["Data Analitikası xidməti", "datanın vizuallasdırılması", "SMM xidməti", "Sosial Media Marketinqi", "Mobil tətbiqlərin hazırlanması", "tətbiqlərin hazırlanması", "Veb sayt hazırlanması"]
+    "keywords": "Data Analitikası xidməti, datanın vizuallasdırılması, SMM xidməti, Sosial Media Marketinqi, Mobil tətbiqlərin hazırlanması, tətbiqlərin hazırlanması, Veb sayt hazırlanması"
   },
   "Navbar": {
     "services": "Services",
@@ -17,6 +17,8 @@
     "title": "Services",
     "description": "We are offering a number of services which will help you to realize your business wishes quickly and effectively.",
     "order": "ORDER ⚡ ORDER ⚡ ORDER ⚡ ORDER ⚡ ORDER ⚡",
+    "contacts": "Contact us",
+    "projects": "Visit our projects",
     "accordions": {
       "sw": {
         "title": "Software development",

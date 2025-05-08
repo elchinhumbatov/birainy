@@ -79,7 +79,7 @@ export default function Navbar() {
             </Link>
           </div>
 
-          <div className="flex items-center justify-end lg:justify-between gap-2 w-full p-4 ml-6 bg-white lg:bg-gray-100 rounded-2xl">
+          <div className="flex items-center justify-end lg:justify-between gap-2 w-full p-0 lg:p-4 ml-6 bg-white lg:bg-gray-100 rounded-2xl">
             {/* Web View */}
             <div className="hidden lg:flex items-center">
               {navlinks.map((link) =>
@@ -143,7 +143,7 @@ export default function Navbar() {
                   </Button>
                 </DropdownTrigger>
                 <DropdownMenu
-                  aria-label="Action event example"
+                  aria-label="Choose Language"
                   onAction={(key) => handleLanguageChange(key as string)}
                   className="min-w-[100px] text-center"
                 >
@@ -180,7 +180,7 @@ export default function Navbar() {
               >
                 <div
                   className={`${s.menu} ${isOpen ? s.opened : ""}`}
-                  aria-label="Main Menu"
+                  aria-label="Burger Menu"
                   aria-expanded={isOpen}
                 >
                   <svg width="35" height="35" viewBox="0 0 100 100">

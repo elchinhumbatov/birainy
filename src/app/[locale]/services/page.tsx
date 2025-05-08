@@ -3,13 +3,14 @@ import React from "react";
 import { Button, Divider } from "@heroui/react";
 import { useSearchParams } from "next/navigation";
 import { useTranslations, useMessages } from "next-intl";
+import Link from "next/link";
 
 import ServicesHeader from "@/components/services/servicesHeader";
 import ServicesAccordion from "@/components/services/servicesAccordion";
 import { AccordionItemType, AccordionTabs } from "@/types/types";
-import Link from "next/link";
 import Projects from "@/components/icons/Projects";
 import Phone from "@/components/icons/Phone";
+
 
 export default function Services() {
   const searchParams = useSearchParams();
