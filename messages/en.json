@@ -16,6 +16,65 @@
   "Services": {
     "title": "Services",
     "description": "We are offering a number of services which will help you to realize your business wishes quickly and effectively.",
-    "order": "ORDER ⚡ ORDER ⚡ ORDER ⚡ ORDER ⚡ ORDER ⚡"
+    "order": "ORDER ⚡ ORDER ⚡ ORDER ⚡ ORDER ⚡ ORDER ⚡",
+    "accordions": {
+      "sw": {
+        "title": "Software development",
+        "tabs": {
+          "sw": {"title": "Software development", "desc": "Thanks to various systems and mobile apps, OCR-based Fast Search System, Telegram Bots, businesses can strengthen consumer relations, effectively manage the workload of the employees, speed up the process and replace the manual workflow with automated solutions."},
+          "fss": {"title": "Fast Search System", "desc": "Thanks to various systems and mobile apps, OCR-based Fast Search System, Telegram Bots, businesses can strengthen consumer relations, effectively manage the workload of the employees, speed up the process and replace the manual workflow with automated solutions."},
+          "crm": {"title": "CRM and ERP", "desc": "Thanks to various systems and mobile apps, OCR-based Fast Search System, Telegram Bots, businesses can strengthen consumer relations, effectively manage the workload of the employees, speed up the process and replace the manual workflow with automated solutions."},
+          "ma": {"title": "Mobile Apps", "desc": "Thanks to various systems and mobile apps, OCR-based Fast Search System, Telegram Bots, businesses can strengthen consumer relations, effectively manage the workload of the employees, speed up the process and replace the manual workflow with automated solutions."}
+        }
+      },
+      "wc": {
+        "title": "Website creation",
+        "tabs": {
+          "wc": {"title": "Website creation", "desc": "Thanks to various systems and mobile apps, OCR-based Fast Search System, Telegram Bots, businesses can strengthen consumer relations, effectively manage the workload of the employees, speed up the process and replace the manual workflow with automated solutions."}
+        }
+      },
+      "ga": {
+        "title": "Gaming Apps",
+        "tabs": {
+          "ga": {"title": "Gaming Apps", "desc": "Thanks to various systems and mobile apps, OCR-based Fast Search System, Telegram Bots, businesses can strengthen consumer relations, effectively manage the workload of the employees, speed up the process and replace the manual workflow with automated solutions."},
+          "stand": {"title": "Stand and VR Games", "desc": "Thanks to various systems and mobile apps, OCR-based Fast Search System, Telegram Bots, businesses can strengthen consumer relations, effectively manage the workload of the employees, speed up the process and replace the manual workflow with automated solutions."},
+          "wg": {"title": "Web Games", "desc": "Thanks to various systems and mobile apps, OCR-based Fast Search System, Telegram Bots, businesses can strengthen consumer relations, effectively manage the workload of the employees, speed up the process and replace the manual workflow with automated solutions."},
+          "vr": {"title": "VR Simulators", "desc": "Thanks to various systems and mobile apps, OCR-based Fast Search System, Telegram Bots, businesses can strengthen consumer relations, effectively manage the workload of the employees, speed up the process and replace the manual workflow with automated solutions."},
+          "gmr": {"title": "Gaming Monitor Rentals", "desc": "Thanks to various systems and mobile apps, OCR-based Fast Search System, Telegram Bots, businesses can strengthen consumer relations, effectively manage the workload of the employees, speed up the process and replace the manual workflow with automated solutions."}
+        }
+      },
+      "da": {
+        "title": "Data Analytics",
+        "tabs": {
+          "da": {"title": "Data Analytics", "desc": "Thanks to various systems and mobile apps, OCR-based Fast Search System, Telegram Bots, businesses can strengthen consumer relations, effectively manage the workload of the employees, speed up the process and replace the manual workflow with automated solutions."},
+          "fa": {"title": "Financial analytics", "desc": "Thanks to various systems and mobile apps, OCR-based Fast Search System, Telegram Bots, businesses can strengthen consumer relations, effectively manage the workload of the employees, speed up the process and replace the manual workflow with automated solutions."},
+          "ha": {"title": "HR analytics", "desc": "Thanks to various systems and mobile apps, OCR-based Fast Search System, Telegram Bots, businesses can strengthen consumer relations, effectively manage the workload of the employees, speed up the process and replace the manual workflow with automated solutions."},
+          "om": {"title": "Optimization modelling", "desc": "Thanks to various systems and mobile apps, OCR-based Fast Search System, Telegram Bots, businesses can strengthen consumer relations, effectively manage the workload of the employees, speed up the process and replace the manual workflow with automated solutions."},
+          "pa": {"title": "Procurement analytics", "desc": "Thanks to various systems and mobile apps, OCR-based Fast Search System, Telegram Bots, businesses can strengthen consumer relations, effectively manage the workload of the employees, speed up the process and replace the manual workflow with automated solutions."},
+          "kpi": {"title": "Key Performance Indicators (KPI) analytics", "desc": "Thanks to various systems and mobile apps, OCR-based Fast Search System, Telegram Bots, businesses can strengthen consumer relations, effectively manage the workload of the employees, speed up the process and replace the manual workflow with automated solutions."},
+          "onec": {"title": "Integration with 1C program", "desc": "Thanks to various systems and mobile apps, OCR-based Fast Search System, Telegram Bots, businesses can strengthen consumer relations, effectively manage the workload of the employees, speed up the process and replace the manual workflow with automated solutions."},
+          "hse": {"title": "HSE analytics", "desc": "Thanks to various systems and mobile apps, OCR-based Fast Search System, Telegram Bots, businesses can strengthen consumer relations, effectively manage the workload of the employees, speed up the process and replace the manual workflow with automated solutions."},
+          "sale": {"title": "Sale/KPI", "desc": "Thanks to various systems and mobile apps, OCR-based Fast Search System, Telegram Bots, businesses can strengthen consumer relations, effectively manage the workload of the employees, speed up the process and replace the manual workflow with automated solutions."},
+          "smd": {"title": "Social Media Dashboard", "desc": "Thanks to various systems and mobile apps, OCR-based Fast Search System, Telegram Bots, businesses can strengthen consumer relations, effectively manage the workload of the employees, speed up the process and replace the manual workflow with automated solutions."},
+          "ra": {"title": "Restaurant analytics", "desc": "Thanks to various systems and mobile apps, OCR-based Fast Search System, Telegram Bots, businesses can strengthen consumer relations, effectively manage the workload of the employees, speed up the process and replace the manual workflow with automated solutions."}
+        }
+      }
+    }
+  },
+  "Footer": {
+    "title": "Get in touch with us now",
+    "follow": "Follow us",
+    "az": {
+      "country": "Azerbaijan",
+      "address": "Azure Business Center 8 Noyabr, 15 Baku, Azerbaijan AZ1010"
+    },
+    "cn": {
+      "country": "Canada",
+      "address": "Edmonton, Alberta"
+    },
+    "ge": {
+      "country": "Georgia",
+      "address": "Tbilisi, Georgia"
+    }
   }
 }

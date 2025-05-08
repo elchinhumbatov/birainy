@@ -2,29 +2,10 @@
 import React, { useCallback, useEffect, useState } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
-const accordionItems = [
-  {
-    id: 1,
-    title: "Accordion 1",
-    tabs: ["birinci", "ikincisi", "ucuncusu"],
-  },
-  {
-    id: 2,
-    title: "Accordion 2",
-    tabs: ["birinci", "ikincisi", "ucuncusu"],
-  },
-  {
-    id: 3,
-    title: "Accordion 3",
-  },
-  {
-    id: 4,
-    title: "Accordion 4",
-    tabs: ["birinci", "ikincisi", "ucuncusu"],
-  },
-];
+import { AccordionItemType } from "@/types/types";
 
-export default function ServicesAccordion() {
+
+export default function ServicesAccordion({ accordionItems }: { accordionItems: AccordionItemType[] }) {
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
   const router = useRouter();
   const pathname = usePathname();
@@ -51,9 +32,10 @@ export default function ServicesAccordion() {
   };
 
   const toggleAccordion = (currentIndex: number) => {
-    setExpandedIndex((prevIndex) =>
-      prevIndex === currentIndex ? null : currentIndex
-    );
+    setExpandedIndex(currentIndex)
+    // setExpandedIndex((prevIndex) =>
+    //   prevIndex === currentIndex ? null : currentIndex
+    // );
   };
 
   useEffect(() => {
@@ -64,14 +46,14 @@ export default function ServicesAccordion() {
     } else {
       setExpandedIndex(null);
     }
-  }, [searchParams]);
+  }, [searchParams, accordionItems]);
 
 
   return (
-    <div className="accordion w-full md:w-[30%] font-pp-neue start-0 static lg:sticky top-[130px] h-fit">
+    <div className="accordion w-full lg:min-w-[35%] font-pp-neue start-0 static lg:sticky top-[130px] h-fit">
       <div>
         {accordionItems.map((item, index) => {
-          const hasTabs = item.tabs && item.tabs.length > 0;
+          const hasTabs = item.tabs && item.tabs.length > 1;
 
           return (
             <div
@@ -94,13 +76,13 @@ export default function ServicesAccordion() {
               </div>
               {hasTabs && expandedIndex === index && (
                 <div className="pl-4 bg-gray-100 border-t border-t-gray-300 py-4 rounded-b-lg">
-                  {item.tabs.map((tab, tabIndex) => (
+                  {(item.tabs ?? []).map((tab, tabIndex) => (
                     <p
                       key={tabIndex}
                       className="cursor-pointer text-gray-500"
                       onClick={() => handleAccordionItem(tabIndex)}
                     >
-                      {tab}
+                      {tab.title}
                     </p>
                   ))}
                 </div>

@@ -1,27 +1,82 @@
-'use client'
+"use client";
 import React from "react";
-import { Divider } from "@heroui/react";
+import { Button, Divider } from "@heroui/react";
 import { useSearchParams } from "next/navigation";
+import { useTranslations, useMessages } from "next-intl";
 
 import ServicesHeader from "@/components/services/servicesHeader";
 import ServicesAccordion from "@/components/services/servicesAccordion";
-import { useTranslations } from "next-intl";
-
+import { AccordionItemType, AccordionTabs } from "@/types/types";
+import Link from "next/link";
+import Projects from "@/components/icons/Projects";
+import Phone from "@/components/icons/Phone";
 
 export default function Services() {
   const searchParams = useSearchParams();
-  const t = useTranslations('Services');
+  const t = useTranslations("Services");
+  const messages = useMessages();
+  const accordionsObj = messages.Services.accordions as Record<
+    string,
+    { title: string; tabs?: AccordionTabs }
+  >;
+
+  const accordionItems: AccordionItemType[] = Object.entries(accordionsObj).map(
+    ([key, value], idx) => ({
+      id: idx + 1,
+      key,
+      title: value.title,
+      tabs: value.tabs
+        ? Object.entries(value.tabs).map(([tabKey, tabData]) => ({
+            key: tabKey,
+            title: tabData.title,
+            desc: tabData.desc,
+          }))
+        : undefined,
+    })
+  );
 
   return (
     <section>
       <div className="container">
         <ServicesHeader t={t} />
         <Divider className="my-10" />
-        <div className="flex flex-col md:flex-row gap-10 pb-20">
-          <ServicesAccordion />
+        <div className="flex flex-col lg:flex-row gap-10 pb-20">
+          <ServicesAccordion accordionItems={accordionItems} />
           <div className="info">
-            <p>Selected Item ID: {searchParams.get("id") || "None"}</p>
-            <p>Selected Tab ID: {searchParams.get("tab") || "None"}</p>
+            <h2 className="font-pp-neue text-3xl md:text-5xl mb-8 font-semibold">
+              {accordionItems[
+                Number(searchParams.get("id"))
+                  ? Number(searchParams.get("id")) - 1
+                  : 0
+              ]?.title}
+            </h2>
+            <p>
+              {accordionItems[
+                Number(searchParams.get("id"))
+                  ? Number(searchParams.get("id")) - 1
+                  : 0
+              ]?.tabs?.[
+                Number(searchParams.get("tab"))
+                  ? Number(searchParams.get("tab"))
+                  : 0
+              ]?.desc}
+            </p>
+            <div className="flex flex-col lg:flex-row gap-4 my-5">
+              <Link href="/contact">
+                <Button
+                  color="primary"
+                  startContent={<Phone />}
+                  className="p-6"
+                >
+                  {t("contacts")}
+                </Button>
+              </Link>
+              <Link href="/contact">
+                <Button startContent={<Projects />} className="p-6">
+                  {t("projects")}
+                </Button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
