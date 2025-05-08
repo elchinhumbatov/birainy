@@ -12,5 +12,10 @@
     "projects": "Projects",
     "blogs": "Blogs",
     "follow": "Follow us"
+  },
+  "Services": {
+    "title": "Services",
+    "description": "We are offering a number of services which will help you to realize your business wishes quickly and effectively.",
+    "order": "ORDER ⚡ ORDER ⚡ ORDER ⚡ ORDER ⚡ ORDER ⚡"
   }
 }

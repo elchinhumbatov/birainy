@@ -61,8 +61,9 @@ export default function Navbar() {
       className={`fixed top-0 left-0 w-full bg-white z-99 px-[24px] pt-[16px] lg:px-[64px] lg:pt-[32px] ${
         hasScrolled ? "border-b border-gray-100" : ""
       }`}
+      onClick={() => isOpen ? setIsOpen(false) : null}
     >
-      <div className="container mx-auto">
+      <div className="container">
         <div className="flex justify-between items-center h-16">
           <div>
             <Link href="/">
@@ -119,7 +120,7 @@ export default function Navbar() {
               <Button
                 variant="solid"
                 color="primary"
-                className="hidden lg:block font-mono tracking-tighter text-md p-0"
+                className="hidden lg:block font-pp-neue text-md p-0"
               >
                 <Link
                     href='/about'
@@ -213,7 +214,7 @@ export default function Navbar() {
               ))}
             </div>
             <div>
-              <p className="text-gray-700 text-xl font-mono tracking-tighter font-medium">
+              <p className="text-gray-700 text-xl font-pp-neue">
                 {t('follow')}
               </p>
               <div className="flex items-center gap-4 mt-2 mb-8">

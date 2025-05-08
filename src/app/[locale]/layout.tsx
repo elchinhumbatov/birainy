@@ -9,6 +9,7 @@ import "../globals.css";
 import { Providers } from "../providers";
 import { routing } from "@/i18n/routing";
 import Navbar from "@/components/navbar/Navbar";
+import Footer from "@/components/footer/footer";
 
 
 type Props = {
@@ -58,6 +59,7 @@ export default async function RootLayout({
         <Providers>
           <Navbar />
           <div className="pt-[96px] min-h-[80vh]">{children}</div>
+          <Footer />
         </Providers>
       </body>
     </html>

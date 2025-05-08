@@ -1,0 +1,42 @@
+.circleContainer {
+  position: relative;
+  width: 136px;
+  height: 136px;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  transform: translate(-50%, -50%) rotate(-30deg);
+  transition: transform 0.3s ease;
+}
+
+.circleContainer:hover .arrow {
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.rotatingText {
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: spin 10s linear infinite;
+}
+.circleContainer:hover .rotatingText {
+  animation-play-state: paused;
+}
+
+.text {
+  fill: white;
+  font-size: 6px;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
