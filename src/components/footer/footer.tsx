@@ -76,12 +76,12 @@ export default function Footer() {
         <Divider className="bg-gray-400 my-10" />
 
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center mb-5">
-          <div className="flex items-center justify-center gap-3 mb-5 lg:mb-0">
+          <div className="flex items-center justify-center gap-3 mb-10 lg:mb-0">
             <Image src='/icons/verify.svg' alt='verify' width={37} height={37} />
             <p className="text-lg">Partner with</p>
             <Image src='/icons/microsoft.svg' alt='microsoft' width={100} height={26} />
           </div>
-          <div className="flex items-center justify-center gap-4">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-2">
             <Link href='tel:+994124886654' className="text-lg">+994 12 488 66 54</Link>
             <Link href='tel:+994776131317' className="text-lg">+994 77 613 13 17</Link>
             <Link href='mailto:info@birainy.com' className="text-lg">info@birainy.com</Link>
